@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Primeira coisa é criar um FORMULÁRIO no qual o usuário irá inserir nome e telefone - OK
+        Irei criar um BOTÃO para cadastrar - OK, ***mas ainda não está vinculado com a tabela***
+        Ao clicar, o que for colocado nesse formulário irá para a tabela
+        Depois vou criar uma TABELA com DUAS COLUNAS: 1) Nome // 2) Telefone.-->
+        <div id="container">
+            <header>
+                <h2>Informe os seus dados</h2>
+            </header>
+        <form id="formulario">
+            <input type="text" id="nomeUsuario" placeholder="Nome Completo">
+            <input type="tel" id="telUsuario" placeholder="Telefone com DDD">
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome do Usuário:
+                    </th>
+                    <th>
+                        Número para contato:
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        Quantidade de cadastros:
+                    </td>
+                    <td id="count">...</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
